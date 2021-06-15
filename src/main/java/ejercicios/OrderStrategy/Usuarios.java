@@ -52,4 +52,7 @@ public class Usuarios {
     public void info(){
         System.out.println(nombre+"("+ci+")"+". Fecha de nacimiento: "+simpleDateFormat.format(fecha)+". Profesion: "+profesion);
     }
+
+
+
 }
