@@ -8,6 +8,6 @@ public abstract class Colleague {
         this.canalComunicacion=canalComunicacion;
     }
 
-    public abstract void enviar(String message);
+    public abstract void enviar(String message,String forWho);
     public abstract void recibirMensaje(String message);
 }

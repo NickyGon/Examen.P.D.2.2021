@@ -35,8 +35,8 @@ public class Docentes extends Colleague{
     }
 
     @Override
-    public void enviar(String message) {
-        canalComunicacion.enviar(message,this);
+    public void enviar(String message,String forWho) {
+        canalComunicacion.enviar(message,this,forWho);
     }
 
     @Override
