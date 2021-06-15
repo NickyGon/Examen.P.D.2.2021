@@ -3,6 +3,7 @@ package ejercicios.ChatEducativo;
 public class Cliet {
     public static void main(String[]args){
         ChatEducativo chatEducativo=new ChatEducativo();
+
         Estudiantes estudiantes=new Estudiantes(chatEducativo);
         estudiantes.setNombre("Nicole");
         estudiantes.setSemestre(4);
@@ -10,7 +11,7 @@ public class Cliet {
 
         Docentes docentes=new Docentes(chatEducativo);
         docentes.setNombre("Nelly");
-        docentes.setCi("1233134");
+        docentes.setCi("1289763");
         docentes.setMateria("Algebra");
 
         Adminsitrativos adminsitrativos=new Adminsitrativos(chatEducativo);
@@ -24,6 +25,8 @@ public class Cliet {
 
         adminsitrativos.enviar("Hola","");
         docentes.enviar("Hola","");
+        estudiantes.enviar("Nicole","d");
         estudiantes.enviar("Nicole","a");
+        estudiantes.enviar("Nicole","");
     }
 }

@@ -40,7 +40,7 @@ public class ChatEducativo implements iCanalComunicacion{
                 }
             } else if (origen instanceof Estudiantes){
                 Estudiantes parseEst=(Estudiantes) origen;
-                if(String.valueOf(parseEst.getNumeroMatricula())!=entry.getKey() && forWho.toUpperCase().equals("A")){
+                if(String.valueOf(parseEst.getNumeroMatricula())!=entry.getKey() && forWho.toUpperCase().equals("")){
                         entry.getValue().recibirMensaje(message);
                     } else if (forWho.toUpperCase().equals("D") && entry.getValue() instanceof Docentes && String.valueOf(parseEst.getNumeroMatricula())!=entry.getKey()){
                         entry.getValue().recibirMensaje(message);
